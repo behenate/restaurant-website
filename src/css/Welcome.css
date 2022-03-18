@@ -1,0 +1,107 @@
+
+
+
+.welcome-screen {
+  display: grid;
+  grid-area: main;
+  background-color: #ffffff;
+  grid-template-rows: 30px 50px 40px 50px 20px 50px 30px 50px auto;
+  grid-template-columns: 100px auto 75px 200px 75px auto 100px;
+  grid-template-areas:"logo . . . . . ."
+                      "welcome-title welcome-title welcome-title welcome-title welcome-title welcome-title welcome-title"
+                      ". . . . . . ."
+                      ". . welcome-city welcome-city welcome-city . ."
+                      ". . . . . . ."
+                      ". . welcome-restaurant welcome-restaurant welcome-restaurant . ."
+                      ". . . . . . ."
+                      ". . . welcome-order . . ."
+                      ". . . . . . .";
+  border-radius: 20px;
+  /*border: 7px solid #f5f5f5;*/
+  box-shadow: 0 0 20px rgb(215, 215, 215);
+}
+
+.welcome-title {
+  text-align-last: center;
+  font-family: 'Varela Round', sans-serif;
+  grid-area: welcome-title;
+  font-size: 25px;
+}
+.welcome-city, .welcome-restaurant{
+  display: flex;
+  border-radius: 10px;
+  text-align-last: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 0 8px rgba(215, 215, 215, 0.72);
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+.welcome-city:hover, .welcome-restaurant:hover{
+  background-color: #fafafa;
+  box-shadow: 0 0 15px rgba(215, 215, 215, 0.72);
+}
+.welcome-city:active{
+  border: none;
+}
+.welcome-city {
+  grid-area: welcome-city;
+}
+
+.welcome-restaurant {
+  grid-area: welcome-restaurant;
+}
+
+.welcome-option{
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  text-align-last: center;
+}
+
+.welcome-order {
+  font-family: 'Varela Round', sans-serif;
+  grid-area: welcome-order;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(80, 189, 234);
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-size: 15px;
+  box-shadow: 0 0 6px #50bce9;
+  margin: 0;
+}
+.welcome-order:hover{
+  background-color: rgb(106, 199, 241);
+  box-shadow: 0 0 10px #50bce9;
+}
+.welcome-order:active{
+  background-color: rgb(120, 210, 239);
+}
+.welcome-logo {
+  grid-area: logo;
+  display: flex;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+@media only screen and (max-width: 600px) {
+  .welcome-screen {
+    grid-template-rows: 10% 15% 5% 15% 5% 15% 5% 15%;
+    grid-template-columns: 0 5% 15% 60% 15% 5% 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(215, 215, 215);
+  }
+  .welcome-logo{
+    width: 65px;
+    height: 65px;
+  }
+  .welcome-title{
+    width: 100%;
+    font-size: 14px;
+  }
+  .welcome-city, .welcome-restaurant{
+    width: 100%;
+  }
+}

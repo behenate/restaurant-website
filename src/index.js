@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './css/Index.css';
+import './css/Welcome.css';
+import './css/List.css';
+import App from './js/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('main-grid')
 );
 
 // If you want to start measuring performance in your app, pass a function

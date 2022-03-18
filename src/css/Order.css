@@ -1,0 +1,118 @@
+.order-nav-cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  place-items: center;
+  place-content: center;
+  grid-row: row4;
+  grid-column-start: col2;
+  grid-column-end: col3;
+}
+.order-form{
+  display: flex;
+  flex-direction: column;
+  grid-column-start: col2;
+  grid-column-end: col3;
+  grid-row-start: row2;
+}
+.order-form-line{
+  display: flex;
+  width: 100%;
+}
+
+.order-form-line > input, .order-form-line > textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gray;
+}
+.order-form-line .two > input{
+  width: 50%;
+}
+
+.order-payment-cont{
+  display: flex;
+  place-items: center;
+  place-content: center;
+  grid-column-start: col2;
+  grid-column-end: col3;
+  grid-row-start: row2;
+  grid-row-end: row3;
+}
+.order-payment-elem{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  width: 200px;
+  height: 100px;
+  border: 1px solid lightslategray;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 20px 0 20px;
+}
+.order-payment-elem:hover{
+  border: 2px solid darkseagreen;
+}
+.order-payment-elem > img{
+  width: 50px;
+  padding: 10px;
+}
+.order-payment-elem > p {
+  padding: 10px;
+  text-align: center;
+}
+.order-summary-cont{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  grid-column-start: col2;
+  grid-column-end: col3;
+  grid-row-start: row2;
+  grid-row-end: row3;
+}
+.order-summary-elem{
+  display: flex;
+  width: 100%;
+  min-height: 55px;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 7px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px rgb(152, 172, 192);
+}
+.order-summary-elem > img{
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .order-payment-cont{
+    display: flex;
+    place-items: center;
+    place-content: center;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row-start: row2;
+    grid-row-end: row3;
+  }
+  .order-payment-elem{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    width: 40vw;
+    height: 40vw;
+    margin: 2px;
+    border: 1px solid lightslategray;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 11px;
+  }
+}

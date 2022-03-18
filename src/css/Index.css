@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+  z-index: 5;
+  position: relative;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  height: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+p{
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F6F6F6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.main-grid {
+  display: grid;
+  background-color: #F4F4F4;
+  height: 100vh;
+  grid-template-rows: [row0] 95px [row1] 100px [row2] auto [row3] auto [row4] 120px [row5];
+  grid-template-columns: [col0] auto [col1] 200px [col2] 700px [col3] 200px [col4] auto [col5];
+  grid-template-areas: "navbar navbar navbar navbar navbar"
+                        "margin-left . . . margin-right"
+                        "margin-left main-left main main-right margin-right"
+                        "margin-left . . . margin-right"
+                        "margin-left . . . margin-right";
+  /*background: url("images/main-background.jpeg");*/
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-position-x: 300px;
+}
+
+.top-navbar {
+  display: grid;
+  grid-template-columns: [col0]40% [col1] 60%[col2];
+  grid-area: navbar;
+  background-color: #f3f3f3;
+  border-bottom: 2px solid #5e5d5d;
+  height: 95px;
+}
+.navbar-menu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar-menu-button{
+  display: flex;
+  width: 140px;
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
+  height: 100%;
+}
+.navbar-menu-button:hover{
+  color: #50bce9;
+  cursor: pointer;
+}
+.navbar-logo{
+  color: #50bce9;
+  display: flex;
+  text-align: center;
+  place-content: flex-start;
+  place-items: center;
+  height: 100%;
+}
+.navbar-logo > img{
+  height: 80px;
+}
+@media only screen and (max-width: 600px) {
+  .main-grid{
+    height: 100%;
+    grid-template-rows: [row0] 10vh [row1] 10vh [row2] 50vh [row3] 20vh [row4] 10vh [row5];
+    grid-template-columns: [col0] 0px [col1] 5vw [col2] 90vw [col3] 5vw [col4] 0px [col5];
+  }
+  .top-navbar {
+    display: grid;
+    height: 100%;
+    grid-template-columns: [col0]10% [col1] 90%[col2];
+  }
+  .navbar-menu{
+    place-content: center;
+  }
+  .navbar-menu-button{
+    width: 200px;
+    font-size: 12px;
+    height: 100%;
+    font-weight: 600;
+  }
+  .navbar-logo > h1{
+    display: none;
+  }
+  .navbar-logo > img{
+    height: 40px;
+  }
+}

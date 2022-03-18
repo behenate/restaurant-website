@@ -1,0 +1,19 @@
+.dot-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  place-items: center;
+  place-content: center;
+  align-self: flex-end;
+  padding: 0 0 50px 0;
+}
+.dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  border: 2px solid #282c34;
+  margin: 0 10px 0 10px ;
+}
+.dot:hover{
+  cursor: pointer;
+}
