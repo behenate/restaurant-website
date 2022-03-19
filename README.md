@@ -2,7 +2,7 @@
 
 ### Description
 
-This repository contains a simple restaurant website frontend, which I created when learning `React.js`. The frontend is fully featured and ready to accept product lists from a server.
+This repository contains a simple restaurant website frontend, which I created in `React.js`. The frontend is fully featured and ready to accept product lists from a server.
 
 ### Setup
 
