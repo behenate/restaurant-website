@@ -13,19 +13,23 @@ The project was setup via `create-react-project` in order to run it on your mach
 
 ### Website preview
 
-##### Choosing restaurant location:![demo1](/home/wojciech/WebstormProjects/restaurant_website/demo_images/demo1.gif)
+##### Try it yourself! : https://behenate.github.io/restaurant-website/
 
-### Using the menu:
+**Or watch the GIFs below:**
 
-![demo2h](/home/wojciech/WebstormProjects/restaurant_website/demo_images/demo2h.gif)
+Choosing restaurant location:![demo1](demo_images/demo1.gif)
 
-### About us page:
+Using the menu:
 
-![demo3](/home/wojciech/WebstormProjects/restaurant_website/demo_images/demo3.gif)
+![demo2h](demo_images/demo2h.gif)
 
-### Ordering:
+About us page:
 
-![demo4](/home/wojciech/WebstormProjects/restaurant_website/demo_images/demo4.gif)
+![demo3](demo_images/demo3.gif)
+
+Ordering:
+
+![demo4](demo_images/demo4.gif)
 
 
 
